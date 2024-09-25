@@ -26,16 +26,33 @@ El vector X fue el vector mas optimo el cual desperdicio menos espacio, sorprend
 
 PREGUNTA NUMERO 3.
 
+
 <typename T>
 
 class AdjacencyList{
 
+    public :         
     T transporte;
+    unsigned int size_ciudades;
 
+    private :
     class Nodo{
 
         Nodo *siguiente;
         Nodo *anterior;
+
+    Nodo():siguiente(nullptr),anterior(nullptr),size_ciudades(0);
+    Nodo(T d):siguiente(d),anterior(d),size_ciudades(0);
+    bool empty(){ return siguiente == nullptr;}
+
+
+    void insetar_ciudad(T transporte){
+
+          if(empty)
+         
+
+    
+     
 
 
 
